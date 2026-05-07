@@ -21,6 +21,7 @@ class EnvironmentVariables {
   @Max(65535)
   PORT!: number;
 
+  @IsOptional()
   @IsString()
   @MinLength(1)
   DATABASE_URL!: string;
